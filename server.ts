@@ -18,9 +18,7 @@ app.prepare().then(() => {
     
     socket.on("fold", () => {
       console.log("[server.ts] socket.on fold")
-      // socket.emit("fold");
       io.emit("fold");
-      // io.("fold");
     });
 
   });
